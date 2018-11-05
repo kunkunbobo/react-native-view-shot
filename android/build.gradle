@@ -3,7 +3,9 @@ buildscript {
         root project is responsible for that. */
     if (rootProject.buildDir == project.buildDir) {
         repositories {
-          //  google()
+            maven {
+                url 'https://maven.google.com'
+            }
             jcenter()
         }
         dependencies {
@@ -32,7 +34,9 @@ android {
 }
 
 repositories {
-   // google()
+    maven {
+        url 'https://maven.google.com'
+    }
     jcenter()
     mavenLocal()
     maven {
