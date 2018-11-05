@@ -3,11 +3,11 @@ buildscript {
         root project is responsible for that. */
     if (rootProject.buildDir == project.buildDir) {
         repositories {
-            google()
+          //  google()
             jcenter()
         }
         dependencies {
-            classpath 'com.android.tools.build:gradle:2.3.0'
+            classpath 'com.android.tools.build:gradle:2.2.3'
         }
     }
 }
@@ -32,7 +32,7 @@ android {
 }
 
 repositories {
-    google()
+   // google()
     jcenter()
     mavenLocal()
     maven {
@@ -42,7 +42,5 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.android.support:support-v4:27.+'
-
-    api 'com.facebook.react:react-native:+'
+      compile 'com.facebook.react:react-native:+'
 }
